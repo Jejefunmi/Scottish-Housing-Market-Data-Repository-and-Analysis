@@ -7,13 +7,13 @@ This project leverages data engineering and analysis techniques to create a comp
 The Scottish housing market is influenced by various factors reported in news articles. However, the data is often scattered and unstructured, making it challenging for analysts to extract meaningful insights.
 This project addresses this problem by:
 
-    * Centralizing news data related to Scottish housing projects.
+   * Centralizing news data related to Scottish housing projects.
   
-    * Transforming unstructured news articles into structured data.
+   * Transforming unstructured news articles into structured data.
   
-    * Performing sentiment analysis to understand public perception.
+   * Performing sentiment analysis to understand public perception.
   
-    * Storing the processed data in a format suitable for analysis and reporting.
+   * Storing the processed data in a format suitable for analysis and reporting.
 
 ## Project Objectives
 The primary objectives of this project are:
@@ -29,3 +29,6 @@ The primary objectives of this project are:
  * Data Storage: Store the processed data in a Delta table for efficient querying and analysis.
   
  * Insights Generation: Provide a robust dataset that housing analysts can use to derive valuable insights.
+
+## Data architecture
+![](Data architecture.png)
