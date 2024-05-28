@@ -31,4 +31,4 @@ The primary objectives of this project are:
  * Insights Generation: Provide a robust dataset that housing analysts can use to derive valuable insights.
 
 ## Data architecture
-![](Data architecture.png)
+![](Data_architecture.png)
