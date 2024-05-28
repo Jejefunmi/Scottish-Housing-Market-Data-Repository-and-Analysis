@@ -31,4 +31,8 @@ The primary objectives of this project are:
  * Insights Generation: Provide a robust dataset that housing analysts can use to derive valuable insights.
 
 ## Data architecture
-![](Data_architecture.png)
+![](Data_architecture.jpg)
+The Project employs a robust data architecture to collect, process, store, analyze, and visualize housing-related news.
+Data is sourced from the Bing News API and stored in Lake Database. Using Synapse spark Nootbook, the data undergoes transformation, cleaning, and sentiment analysis via SynapseML.
+The cleaned and enriched data is stored in Delta Lake tables, enabling efficient incremental updates. 
+Power BI is used for creating interactive dashboards and visualizations, providing stakeholders with valuable insights into housing trends, sentiment analysis, and news categorization.
