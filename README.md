@@ -36,3 +36,6 @@ The Project employs a robust data architecture to collect, process, store, analy
 Data is sourced from the Bing News API and stored in Lake Database. Using Synapse spark Nootbook, the data undergoes transformation, cleaning, and sentiment analysis via SynapseML.
 The cleaned and enriched data is stored in Delta Lake tables, enabling efficient incremental updates. 
 Power BI is used for creating interactive dashboards and visualizations, providing stakeholders with valuable insights into housing trends, sentiment analysis, and news categorization.
+
+## Environment Setting
+An Azure Account was created in other to provide access Microsoft's cloud services. This account gives access to creating Bing News API which allows me to programmatically fetch real-time news articles related to housing in Scotland. This step is crucial to obtain API Keys. The API keys generated enable secure and authorized access to Bing's news data, allowing us continuously update our dataset with the latest information.
