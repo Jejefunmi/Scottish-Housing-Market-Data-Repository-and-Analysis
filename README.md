@@ -52,6 +52,7 @@ A detailed pipeline is set up to extract data from the Bing Search API, incorpor
 
 ## Data Processing
 ![](Data_transformation.png)
+
 The JSON data is read into a Spark DataFrame with the multiline option enabled to handle multi-line JSON records.
 The DataFrame is filtered to select only the value column, which contains the JSON data.
 The JSON data within the value column is exploded into individual rows, with each row representing a JSON object.
@@ -60,15 +61,14 @@ Each JSON string is parsed to extract specific fields: title, description, categ
 A schema is defined to structure the extracted data.
 The lists of extracted data are combined and converted into a Spark DataFrame using the defined schema.
 
-## Data cleaning
+#### Data cleaning
 Datapublished before formatting                       |   Datapublished after formatting
 :----------------------------------------------------: | :-----------------------------------------------------
-![](B4_date_formated.png)                              | ![]Data_formated.png()
+![](B4_date_formated.png)                              | ![](Data_formated.png)
 
 The datePublished column is formatted to a standard date format (dd-MM-yyyy).
 
-![]()
-Data Storage: For effective searching and analysis, store the converted data in Azure Data Lake's Delta tables
+#### Data Storage: For effective searching and analysis, store the converted data in Azure Data Lake's Delta tables
 
 ## Sentiment Analysis
 ![](Data_Analysis.png)
