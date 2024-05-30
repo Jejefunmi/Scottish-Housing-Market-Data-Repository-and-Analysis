@@ -62,7 +62,7 @@ A schema is defined to structure the extracted data.
 The lists of extracted data are combined and converted into a Spark DataFrame using the defined schema.
 
 #### Data cleaning
-Datapublished before formatting                       |   Datapublished after formatting
+Datapublished before formatting                        |   Datapublished after formatting
 :----------------------------------------------------: | :-----------------------------------------------------
 ![](B4_date_formated.png)                              | ![](Data_formated.png)
 
@@ -72,6 +72,27 @@ The datePublished column is formatted to a standard date format (dd-MM-yyyy).
 
 ## Sentiment Analysis
 ![](Data_Analysis.png)
+Sentiment analysis is performed on the description column of the DataFrame using the SynapseML library.
+The AnalyzeText transformer is configured to analyze sentiment and output the results into the response column.
+The sentiment results are extracted from the response column and added as a new sentiment column in the DataFrame.
+The intermediate error and response columns are dropped for a cleaner final DataFrame.
+
+## Data Storage
+Leveraging on the strengths of Delta Lake and PySpark within the Microsoft Fabric environment using below processes
+* Schema was defined to include necessary fields such as title, description, category, URL, image, provider, and datePublished
+* Creating and Update Table: The Delta tables are updated each day using merge operations which helps to remove duplicate also
+* Data Storage: Data Lake is used to store the Data
+
+## Dashboard
+![](Dashboard_2.png)
+ 
+
+
+
+
+
+
+
 
 
 
