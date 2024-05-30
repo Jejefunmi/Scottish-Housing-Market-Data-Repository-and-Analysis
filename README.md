@@ -84,9 +84,11 @@ Leveraging on the strengths of Delta Lake and PySpark within the Microsoft Fabri
 * Data Storage: Data Lake is used to store the Data
 
 ## Dashboard
-![](Dashboard_1.png)
+![](Dashbord_1.png)
+
 
 ![](Dashboard_2.png)
+
  
 
 
