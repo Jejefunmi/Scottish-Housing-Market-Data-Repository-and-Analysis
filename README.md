@@ -72,6 +72,7 @@ The datePublished column is formatted to a standard date format (dd-MM-yyyy).
 
 ## Sentiment Analysis
 ![](Data_Analysis.png)
+
 Sentiment analysis is performed on the description column of the DataFrame using the SynapseML library.
 The AnalyzeText transformer is configured to analyze sentiment and output the results into the response column.
 The sentiment results are extracted from the response column and added as a new sentiment column in the DataFrame.
@@ -83,13 +84,32 @@ Leveraging on the strengths of Delta Lake and PySpark within the Microsoft Fabri
 * Creating and Update Table: The Delta tables are updated each day using merge operations which helps to remove duplicate also
 * Data Storage: Data Lake is used to store the Data
 
-## Dashboard
+##  Insights Generation
+    To Derive a valuable insight from data generated, I created Dashboards below.
+    
 ![](Dashbord_1.png)
 
-
+The total article I analysed was 64 from 37 Provider. The sentiment analysis shows majority of the descriptions were Neural with 62.50%, 28.13% were Negative, and 9.38% were Positive.
+The dashboard also provide an insight on:
+*   How sentiment of Scottish news articles change over Time?
+   There is a shift in public opinion about Scottish Housing between 19th May to 21st May. 
+*  How Sentiment results vary across different categories?
+   The sentiment result is grouped into Positive, negative and Neutral.
+   Across the sentiment neutral and negative opinions are more common than positive opinions with Neural having highest value. Politics category has all the sentiment grouped, positive 4, negative 10, and neutral 11, while business and entertainment only have 1 positive.
+Neutral sentiment appears to be the most common across the categories which shows a general lukewarm of public opinion towards the topics discussed. However Politics' article has controversial topics.
+  
 ![](Dashboard_2.png)
+*  Which category has the most news articles?
+  Politics has the highest news article which is above 20, followed by business at about 17 while others are below 10 new articles. This might suggest there is likily Political change or influence on            Scottish housing going on at the moment.
+* How does Popularity of Scottish housing Change over time?
+    Between 14th of May to 25th of May, News articles on Scottish Housing increased in popularity. This upward trend suggests People are interested to know what is happening in Scottish Housing.
 
- 
+## Conclusion
+   This project successfully addressed the challenge of scattered and unstructured data hindering analysis of the Scottish housing market.
+      
+## Recommendation
+   In other to expand Data source, I recommend including additional data sources beyond news articles, such as government reports, developer data.
+   Streamline the analysis to delve deep in a specific aspect. For instance, analysing the article published on day 19th - 21st to have an insight on why there was a shift in People's opinion.
 
 
 
